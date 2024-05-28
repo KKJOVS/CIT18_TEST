@@ -5,3 +5,271 @@ HELLO WORLD=
 What will happen?
 
 This is CIT18
+
+
+
+m303user@m303-1 MINGW64 ~
+$ cd desktop
+
+m303user@m303-1 MINGW64 ~/desktop
+$ cd cit18_jovero
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ code ./cit18_jovero
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ git config --global username KKJOVS
+error: key does not contain a section: username
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ git config --global user.name KKJOVS
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ git config --global user.email natrovez0914@gmail.com
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ git config --global init.default branch main
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ git config --global username "KKJOVS"
+error: key does not contain a section: username
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ git config --global user.name "KKJOVS"
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ git config --global user.email natrovez0914@gmail.com
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ git config --global init.deafult branch main
+
+m303user@m303-1 MINGW64 ~/desktop/cit18_jovero
+$ cd
+
+m303user@m303-1 MINGW64 ~
+$ cd Desktop
+
+m303user@m303-1 MINGW64 ~/Desktop
+$ cd CIT18_JOVERO
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO
+$ code ./ CIT18_JOVERO
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO
+$ git config --global user.name "KKJOVS"
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO
+$ git config --global user.email natrovez0914@gmail.com
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO
+$ git config --global init.default branch main
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=KKJOVS
+user.email=natrovez0914@gmail.com
+init.default=branch
+init.deafult=branch
+init.default=branch
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO
+$ cd File.txt
+bash: cd: File.txt: Not a directory
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO
+$ git init
+Initialized empty Git repository in C:/Users/m303user/Desktop/CIT18_JOVERO/.git/
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ls
+File.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ls -a
+./  ../  .git/  File.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ls -all
+total 196
+drwxr-xr-x 1 m303user 1049089 0 May 28 17:55 ./
+drwxr-xr-x 1 m303user 1049089 0 May 28 17:31 ../
+drwxr-xr-x 1 m303user 1049089 0 May 28 17:55 .git/
+-rw-r--r-- 1 m303user 1049089 0 May 28 17:32 File.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git add File.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File.txt
+
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ^C
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ^C
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ^C
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ^C
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git commit -m "Commit"
+[master (root-commit) fbf7d09] Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git commit -m "Another Commit"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git add .
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git commid -m "Another Commit"
+git: 'commid' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git commit -m "Another Commid"
+[master 5be5a52] Another Commid
+ 1 file changed, 3 insertions(+)
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git add .
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git commit -m "3rd commit"
+[master 4bd56b4] 3rd commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git commit -am " Commit Add and Message"
+[master 08483ee]  Commit Add and Message
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ touch File1.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git -am File1.txt "Another File"
+unknown option: -am
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git add File1.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File1.txt
+
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ list
+bash: list: command not found
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ls
+File.txt  File1.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git add File1.txt
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git add File1.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git commit -m "Hello"
+[master f6cd99d] Hello
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File1.txt
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ status
+bash: status: command not found
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$ ^C
+
+m303user@m303-1 MINGW64 ~/Desktop/CIT18_JOVERO (master)
+$
